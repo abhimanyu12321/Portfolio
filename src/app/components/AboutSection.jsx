@@ -59,12 +59,17 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image
+          src="/images/about-image.png"
+          width={500}
+          height={500}
+          alt="logo"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg mb-4">
             Hi Everyone, I am{" "}
-            <span className="text-primary-500">Abhimanyu</span> from Rajsthan,
+            <span className="text-primary-500">Abhimanyu</span> from Rajasthan,
             India.
           </p>
           <p className="text-base lg:text-lg">

@@ -36,6 +36,16 @@ const projectsData = [
     gitUrl: "https://github.com/abhimanyu12321/movie-app",
     previewUrl: "https://movie-app-abhimanyu12321.vercel.app/",
   },
+  {
+    id: 4,
+    title: "AI CERTS Landing page",
+    description:
+      "A landing page for AI CERTS which is a certification platform  build with React , Next,js ,TailwindCSS. ",
+    image: "/images/projects/4.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/abhimanyu12321/AI-clerts-assignment",
+    previewUrl: "https://ai-clerts-assignment.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
