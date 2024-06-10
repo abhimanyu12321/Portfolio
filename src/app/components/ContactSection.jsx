@@ -8,7 +8,16 @@ import Image from "next/image";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className=" my-12 md:my-12 py-24 gap-4 relative">
+    <section
+      id="contact"
+      className=" my-12 md:my-12 py-24 gap-4 relative mt-24"
+    >
+      <div className="flex justify-center items-center gap-4">
+        <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl text-white">
+          Get in touch
+        </h3>
+        <div className="mt-2 h-[4px] min-w-0 flex-grow bg-white"></div>
+      </div>
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10 flex flex-col justify-center items-center">
         <h5 className="text-xl font-bold text-white my-2">
