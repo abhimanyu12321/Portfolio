@@ -8,10 +8,7 @@ import Image from "next/image";
 
 const ContactSection = () => {
   return (
-    <section
-      id="contact"
-      className=" my-12 md:my-12 py-24 gap-4 relative mt-24"
-    >
+    <section className="py-24 gap-4 relative">
       <div className="flex justify-center items-center gap-4">
         <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl text-white">
           Get in touch

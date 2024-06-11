@@ -24,7 +24,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="mt-6 sm:py-[80px] sm:px-6">
+    <section className=" sm:py-[80px] sm:px-6">
       <div className="flex justify-center items-center gap-4">
         <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl text-white">
           Projects

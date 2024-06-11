@@ -5,23 +5,6 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>MongoDB</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Git</li>
-        <li>Tailwind CSS & ShadCN UI</li>
-      </ul>
-    ),
-  },
-  {
     title: "Education",
     id: "education",
     content: (
@@ -47,7 +30,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -57,9 +40,9 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white mt-24" id="about">
+    <section className="text-white">
       <div className="flex justify-center items-center gap-4">
-        <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl">
+        <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl ">
           About Me
         </h3>
         <div className="mt-2 h-[4px] min-w-0 flex-grow bg-white"></div>
@@ -88,13 +71,6 @@ const AboutSection = () => {
             applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            {/* <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton> */}
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
