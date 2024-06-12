@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import { MySkills } from "../constants/MySkills";
 import SkillCard from "./SkillCard";
-
+import { motion } from "framer-motion";
 export default function SkillSection() {
   return (
     <section className=" sm:py-[80px] sm:px-6 text-[#FAF7F2]">
@@ -14,9 +15,27 @@ export default function SkillSection() {
 
       <div className="flex flex-col items-center justify-between gap-6 py-6 mt-20">
         {MySkills?.map((skill, i) => (
-          <div className="w-full" key={i}>
+          <motion.div
+            className="w-full"
+            initial={{
+              opacity: 0,
+              y: 10,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+              amount: 1,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            key={i}
+          >
             <SkillCard title={skill.title} skills={skill.skills} />
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
