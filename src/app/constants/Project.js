@@ -8,7 +8,7 @@ export const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/abhimanyu12321/Shopping-app-frontend",
         previewUrl:
-            "https://shopping-app-frontend-q1op-git-master-abhimanyu12321.vercel.app/",
+            "https://amazona-clone-rho.vercel.app/",
     },
     {
         id: 2,
@@ -20,16 +20,7 @@ export const projectsData = [
         gitUrl: "https://github.com/abhimanyu12321/Multilanguage-Quiz",
         previewUrl: "https://multilanguage-quiz.vercel.app/",
     },
-    {
-        id: 3,
-        title: "IMDB Movie App",
-        description:
-            "A Movie site where users can find popular , upcoming and Top-rated Movie List build with React , Next,js ,TailwindCSS and imdb Movie API for fetching data. ",
-        image: "/images/projects/3.png",
-        tag: ["All", "Web"],
-        gitUrl: "https://github.com/abhimanyu12321/movie-app",
-        previewUrl: "https://movie-app-abhimanyu12321.vercel.app/",
-    },
+
     {
         id: 4,
         title: "AI CERTS Landing page",
@@ -39,5 +30,15 @@ export const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/abhimanyu12321/AI-clerts-assignment",
         previewUrl: "https://ai-clerts-assignment.vercel.app/",
+    },
+    {
+        id: 3,
+        title: "IMDB Movie App",
+        description:
+            "A Movie site where users can find popular , upcoming and Top-rated Movie List build with React , Next,js ,TailwindCSS and imdb Movie API for fetching data. ",
+        image: "/images/projects/3.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/abhimanyu12321/movie-app",
+        previewUrl: "https://movie-app-inky-one.vercel.app/",
     },
 ];
