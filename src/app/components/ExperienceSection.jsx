@@ -46,15 +46,13 @@ const ExperienceWrapper = () => {
 
   const GetDescription = () => {
     switch (DescriptionJob) {
-      case "GoCareers":
-        return <GoCareers />;
-      case "Epoch":
-        return <Epoch />;
-      case "PhysicsWallah":
-        return <PW />;
+      case "Freshbuyzar":
+        return <Freshbuyzar />;
+      case "Infloso":
+        return <Infloso />;
     }
   };
-  const [DescriptionJob, setDescriptionJob] = React.useState("GoCareers");
+  const [DescriptionJob, setDescriptionJob] = React.useState("Freshbuyzar");
   return (
     <section
       className="flex w-full flex-col items-center justify-center space-y-4
@@ -68,14 +66,14 @@ const ExperienceWrapper = () => {
   );
 };
 
-//   GoCareers component
-function GoCareers() {
+//   Freshbuzar component
+function Freshbuyzar() {
   const tasks = [
     {
-      text: "Single-handedly driving the development of a cutting-edge job board platform with a major focus on enhancing UX, resulting in a 40% increase in user engagement.",
+      text: "Transformed the static freshbuzar site to fully dynamic site. Developed and integrated a complete cart feature and implemented seamless order processing workflows. ",
     },
     {
-      text: "Engineered a complete codebase migration from React.js to Next.js, enhancing optimization and performance metrics by a notable 30%, revolutionizing user experience and website speed for 100k+ monthly traffic.",
+      text: "Enhanced site performance by leveraging Next.js Server-Side Rendering (SSR) and Static Site Generation (SSG)., and Successfully integrated online payment gateways to streamline the purchasing process.",
     },
   ];
   return (
@@ -90,14 +88,14 @@ function GoCareers() {
           <div className="spacey-y-2 flex flex-col">
             {/* Title */}
             <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
-              SDE Intern
+              FullStack Developer Intern
             </span>
             <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
               {/* Company name */}
-              <span>Go Careers</span>
+              <span>Freshbuyzar</span>
 
               {/* Date */}
-              <span>Apr 2024 - Present</span>
+              <span>June 2024 - Present</span>
             </div>
           </div>
           <div className="flex flex-col space-y-1 text-sm sm:text-base">
@@ -113,8 +111,8 @@ function GoCareers() {
             <div className="flex flex-row space-x-2">
               <ArrowRightIcon className={"h-5 w-4 flex-none"} />
               <span className="font-bold text-[#3182CE]">
-                Technologies used: React.js, Next.js, Redux, React Query,
-                TypeScript, Tailwind CSS, and Shadcn UI.
+                Technologies used: React.js, Next.js, Context API, React Query,
+                Tailwind CSS, and Headless UI.
               </span>
             </div>
           </div>
@@ -124,17 +122,14 @@ function GoCareers() {
   );
 }
 
-// Epoch component
-function Epoch() {
+// Infloso component
+function Infloso() {
   const tasks = [
     {
-      text: "Developed an AI-driven trading platform for streamlined stock analysis, integrating a financial chatbot and a comprehensive stock dashboard. Focused on enhancing UX with real-time data updates and interactive features. Delivered a robust, scalable solution meeting the complex needs of stock traders.",
+      text: "Developed UI screens for user authentication and profile management using React, Next.js, Tailwind CSS, Figma, NextUI, and TypeScript.",
     },
     {
-      text: "Successfully migrated the codebase from pages router to app router, optimizing the UI and achieving a 20% performance increase.",
-    },
-    {
-      text: "Led a cross-functional team of 3 members, fostering efficient collaboration and successfully guiding the team towards achieving project objectives.",
+      text: "Implemented both credential-based and OAuth authentication mechanisms using NextAuth and Zustand.",
     },
   ];
   return (
@@ -149,14 +144,14 @@ function Epoch() {
           <div className="spacey-y-2 flex flex-col">
             {/* Title */}
             <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
-              Full Stack Engineer Intern
+              FullStack Developer Intern
             </span>
             <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
               {/* Company name */}
-              <span>Epoch - (California-US)</span>
+              <span>Infloso</span>
 
               {/* Date */}
-              <span>Jan 2024 - Apr 2024</span>
+              <span>March 2024 - May 2024</span>
             </div>
           </div>
           <div className="flex flex-col space-y-1 text-sm sm:text-base">
@@ -173,59 +168,9 @@ function Epoch() {
               <ArrowUpRightIcon className={"h-5 w-4 flex-none"} />
               <span className="font-bold text-[#3182CE]">
                 Technologies used: Next.js, TypeScript, Tailwind CSS, React
-                Query, and Web Socket.
+                Query,Nextauth, and Zustand.
               </span>
             </div>
-          </div>
-        </div>
-      </motion.div>
-    </>
-  );
-}
-
-// PW component
-
-function PW() {
-  const tasks = [
-    {
-      text: "Effectively executed social marketing strategies to boost awareness of Physics Wallah's educational programs, resulting in increased student engagement and course sign-ups.",
-    },
-    {
-      text: "Promoted PW Skills, GATE and UPSC courses, enhancing brand visibility and student enrollment.",
-    },
-  ];
-  return (
-    <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-between gap-3 px-4 md:px-0 lg:flex-row xl:gap-5"
-      >
-        <div className="flex w-full flex-col space-y-3 lg:max-w-xl xl:max-w-2xl ">
-          <div className="spacey-y-2 flex flex-col">
-            {/* Title */}
-            <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
-              Campus Ambassador
-            </span>
-            <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
-              {/* Company name */}
-              <span>Physics Wallah</span>
-
-              {/* Date */}
-              <span>Feb 2024 - Present</span>
-            </div>
-          </div>
-          <div className="flex flex-col space-y-1 text-sm sm:text-base">
-            {/* Tasks Description 1 */}
-            {tasks.map((item, index) => {
-              return (
-                <div key={index} className="flex flex-row space-x-2">
-                  <ArrowRightIcon className={"h-5 w-4 flex-none"} />
-                  <span>{item.text}</span>
-                </div>
-              );
-            })}
           </div>
         </div>
       </motion.div>
@@ -282,10 +227,10 @@ const CompaniesBar = (props) => {
         <div className="flex flex-row lg:flex-col">
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={0}
-            CompanyName="Go Careers"
+            CompanyName="Freshbuyzar"
             BarPosition={48}
             BarAbovePosition={1}
-            DescriptionJob="GoCareers"
+            DescriptionJob="Freshbuyzar"
             CompanyNameBackgroundColorGreen={[
               true,
               false,
@@ -298,30 +243,14 @@ const CompaniesBar = (props) => {
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={1}
-            CompanyName="Epoch"
+            CompanyName="Infloso"
             BarPosition={97}
             BarAbovePosition={129}
-            DescriptionJob="Epoch"
+            DescriptionJob="Infloso"
             CompanyNameBackgroundColorGreen={[
               false,
               true,
               false,
-              false,
-              false,
-              false,
-            ]}
-            setDescriptionJob={props.setDescriptionJob}
-          />
-          <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={2}
-            CompanyName="Physics Wallah"
-            BarPosition={145}
-            BarAbovePosition={257}
-            DescriptionJob="PhysicsWallah"
-            CompanyNameBackgroundColorGreen={[
-              false,
-              false,
-              true,
               false,
               false,
               false,

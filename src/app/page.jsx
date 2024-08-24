@@ -5,7 +5,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import SkillSection from "./components/SkillSection";
-// import ExperienceSection from "./components/ExperienceSection";
+import ExperienceSection from "./components/ExperienceSection";
 // import AchievementsSection from "./components/AchievementsSection";
 
 export default function Home() {
@@ -20,9 +20,9 @@ export default function Home() {
         <div id="about">
           <AboutSection />
         </div>
-        {/* <div id="experience">
+        <div id="experience">
           <ExperienceSection />
-        </div> */}
+        </div>
 
         <div id="skills">
           <SkillSection />
