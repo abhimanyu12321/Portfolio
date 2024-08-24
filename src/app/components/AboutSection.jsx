@@ -61,7 +61,7 @@ const AboutSection = () => {
             <span className="text-primary-500">Abhimanyu</span> from Rajasthan,
             India.
           </p>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg text-[#ADB7BE]">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, TypeScript, React, Redux, Node.js, Express,
