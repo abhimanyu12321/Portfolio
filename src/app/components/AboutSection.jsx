@@ -40,7 +40,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white mt-4">
       <div className="flex justify-center items-center gap-4">
         <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl ">
           About Me

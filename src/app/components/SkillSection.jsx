@@ -5,7 +5,7 @@ import SkillCard from "./SkillCard";
 import { motion } from "framer-motion";
 export default function SkillSection() {
   return (
-    <section className=" sm:px-6 text-[#FAF7F2]">
+    <section className=" sm:px-6 text-[#FAF7F2] md:mt-12">
       <div className="flex justify-center items-center gap-4">
         <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl text-white">
           Skills
