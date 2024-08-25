@@ -24,14 +24,14 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section className=" sm:py-[80px] sm:px-6">
+    <section className=" sm:py-8 sm:px-6 my-8">
       <div className="flex justify-center items-center gap-4">
         <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl text-white">
           Projects
         </h3>
         <div className="mt-2 h-[4px] min-w-0 flex-grow bg-white"></div>
       </div>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mt-8">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6  sm:py-10 mt-4">
         <ProjectTag
           onClick={handleTagChange}
           name="All"

@@ -8,16 +8,15 @@ import Image from "next/image";
 
 const ContactSection = () => {
   return (
-    <section className="py-24 gap-4 relative">
+    <section className="py-2 sm:py-6">
       <div className="flex justify-center items-center gap-4">
-        <h3 className="text-3xl font-[800] text-textWhite sm:text-5xl text-white">
+        <h3 className="text-3xl font-[800]  sm:text-5xl text-white">
           Get in touch
         </h3>
         <div className="mt-2 h-[4px] min-w-0 flex-grow bg-white"></div>
       </div>
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10 flex flex-col justify-center items-center">
-        <h5 className="text-xl font-bold text-white my-2">
+      <div className=" flex flex-col justify-center items-center">
+        <h5 className="text-xl sm:text-4xl font-bold text-white my-4">
           Let&apos;s <span className="text-primary-500">Connect</span>
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">

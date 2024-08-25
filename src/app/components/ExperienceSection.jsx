@@ -15,7 +15,7 @@ const ExperienceSection = () => {
   };
 
   return (
-    <section className="py-[80px] sm:px-6 text-white" id="experience">
+    <section className=" my-4 sm:my-8 sm:px-6 text-white" id="experience">
       <motion.div
         ref={refHeading}
         variants={variants1}
@@ -29,7 +29,7 @@ const ExperienceSection = () => {
         </h3>
         <div className="mt-2 h-[4px] min-w-0 flex-grow bg-white"></div>
       </motion.div>
-      <div className="mt-16 sm:mt-20 flex flex-col items-center justify-between py-6">
+      <div className="mt-4 sm:mt-10 flex flex-col items-center justify-between py-2">
         {/* Experience */}
         <ExperienceWrapper />
       </div>
