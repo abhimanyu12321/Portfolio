@@ -75,6 +75,9 @@ function Freshbuyzar() {
     {
       text: "Enhanced site performance by leveraging Next.js Server-Side Rendering (SSR) and Static Site Generation (SSG)., and Successfully integrated online payment gateways to streamline the purchasing process.",
     },
+    {
+      text: "Developed  user-friendly landing pages along with other pages like contact,services,product etc for several clients using Figma.",
+    },
   ];
   return (
     <>
@@ -112,7 +115,7 @@ function Freshbuyzar() {
               <ArrowRightIcon className={"h-5 w-4 flex-none"} />
               <span className="font-bold text-[#3182CE]">
                 Technologies used: React.js, Next.js, Context API, React Query,
-                Tailwind CSS, and Headless UI.
+                Tailwind CSS, and ShadCN UI.
               </span>
             </div>
           </div>

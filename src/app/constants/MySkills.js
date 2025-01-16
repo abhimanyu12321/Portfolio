@@ -18,10 +18,18 @@ export const MySkills = [
                 name: "Python",
                 icon: "PythonOriginal",
             },
+            // {
+            //     name: "C++",
+            //     icon: "CplusplusOriginal",
+            // }
             {
-                name: "C++",
-                icon: "CplusplusOriginal",
-            }
+                name: "HTML",
+                icon: "Html5Original",
+            },
+            {
+                name: "CSS",
+                icon: "Css3Original",
+            },
         ],
         index: 1,
     },
@@ -44,22 +52,16 @@ export const MySkills = [
                 name: "Express.js",
                 icon: "ExpressOriginal",
             },
-            {
-                name: "HTML",
-                icon: "Html5Original",
-            },
-            {
-                name: "CSS",
-                icon: "Css3Original",
-            },
+
+
             {
                 name: "Tailwind CSS",
                 icon: "TailwindcssOriginal",
             },
-            {
-                name: "Bootstrap",
-                icon: "BootstrapOriginal",
-            },
+            // {
+            //     name: "Bootstrap",
+            //     icon: "BootstrapOriginal",
+            // },
             {
                 name: "Shadcn UI",
                 icon: null,
@@ -118,23 +120,23 @@ export const MySkills = [
         index: 5,
     },
 
-    {
-        title: "Coursework",
-        skills: [
-            {
-                name: "Data Structures and Algorithms",
-                icon: null,
-            },
-            {
-                name: "Object Oriented Programming",
-                icon: null,
-            },
+    // {
+    //     title: "Coursework",
+    //     skills: [
+    //         {
+    //             name: "Data Structures and Algorithms",
+    //             icon: null,
+    //         },
+    //         {
+    //             name: "Object Oriented Programming",
+    //             icon: null,
+    //         },
 
-            {
-                name: "Operating Systems",
-                icon: null,
-            },
-        ],
-        index: 6,
-    },
+    //         {
+    //             name: "Operating Systems",
+    //             icon: null,
+    //         },
+    //     ],
+    //     index: 6,
+    // },
 ];

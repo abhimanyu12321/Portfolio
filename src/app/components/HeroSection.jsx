@@ -35,7 +35,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I fell in love with programming and I have at least learnt
+            I fell in love with Computer Science and I have at least learnt
             something, I think… 🤷‍♂️
           </p>
           <div>

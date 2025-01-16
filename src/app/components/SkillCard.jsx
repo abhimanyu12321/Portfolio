@@ -36,7 +36,7 @@ const SkillCard = ({ title, skills }) => {
   return (
     <div className="flex h-full w-[100%] flex-col items-center sm:items-start justify-center gap-3 rounded-[5px] bg-[#18191E] p-[20px]">
       <div className="text-lg sm:text-2xl font-bold">{title}</div>
-      <div className="grid grid-cols-2 place-items-center items-start flex-row flex-wrap sm:items-center justify-start gap-3 sm:flex md:gap-5">
+      <div className="grid grid-cols-2 place-items-center flex-wrap  gap-3 sm:flex md:gap-5">
         {skills?.map((skill, i) => (
           <motion.div
             initial={{
