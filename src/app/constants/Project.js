@@ -8,7 +8,7 @@ export const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/iamkaushal/sistahchatta-frontend",
         previewUrl:
-            "https://sistahchatta.com/",
+            "https://sistahchatta-frontend-eight.vercel.app/",
         isPublic: false,
     },
     {
