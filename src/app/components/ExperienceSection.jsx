@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import React from "react";
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
-const ExperienceSection = () => {
+export default function ExperienceSection() {
   const refHeading = useRef(null);
   const refContent = useRef(null);
   const inViewHeading = useInView(refHeading);
@@ -35,9 +35,7 @@ const ExperienceSection = () => {
       </div>
     </section>
   );
-};
-
-export default ExperienceSection;
+}
 
 // Experience wrapper component
 
@@ -48,11 +46,12 @@ const ExperienceWrapper = () => {
     switch (DescriptionJob) {
       case "Freshbuyzar":
         return <Freshbuyzar />;
-      case "Infloso":
-        return <Infloso />;
+      case "PRNK Infotech LLP":
+        return <Prnk />;
     }
   };
-  const [DescriptionJob, setDescriptionJob] = React.useState("Freshbuyzar");
+  const [DescriptionJob, setDescriptionJob] =
+    React.useState("PRNK Infotech LLP");
   return (
     <section
       className="flex w-full flex-col items-center justify-center space-y-4
@@ -65,121 +64,6 @@ const ExperienceWrapper = () => {
     </section>
   );
 };
-
-//   Freshbuzar component
-function Freshbuyzar() {
-  const tasks = [
-    {
-      text: "Transformed the static freshbuzar site to fully dynamic site. Developed and integrated a complete cart feature and implemented seamless order processing workflows. ",
-    },
-    {
-      text: "Enhanced site performance by leveraging Next.js Server-Side Rendering (SSR) and Static Site Generation (SSG)., and Successfully integrated online payment gateways to streamline the purchasing process.",
-    },
-    {
-      text: "Developed  user-friendly landing pages along with other pages like contact,services,product etc for several clients using Figma.",
-    },
-  ];
-  return (
-    <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-between gap-3 px-4 md:px-0 lg:flex-row xl:gap-5"
-      >
-        <div className="flex w-full flex-col space-y-3 ">
-          <div className="spacey-y-2 flex flex-col">
-            {/* Title */}
-            <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
-              FullStack Developer Intern
-            </span>
-            <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
-              {/* Company name */}
-              <span>Freshbuyzar</span>
-
-              {/* Date */}
-              <span>June 2024 - Present</span>
-            </div>
-          </div>
-          <div className="flex flex-col space-y-1 text-sm sm:text-base">
-            {/* Tasks Description 1 */}
-            {tasks?.map((item, index) => {
-              return (
-                <div key={index} className="flex flex-row space-x-2">
-                  <ArrowRightIcon className={"h-5 w-4 flex-none"} />
-                  <span>{item.text}</span>
-                </div>
-              );
-            })}
-            <div className="flex flex-row space-x-2">
-              <ArrowRightIcon className={"h-5 w-4 flex-none"} />
-              <span className="font-bold text-[#3182CE]">
-                Technologies used: React.js, Next.js, Context API, React Query,
-                Tailwind CSS, and ShadCN UI.
-              </span>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-    </>
-  );
-}
-
-// Infloso component
-function Infloso() {
-  const tasks = [
-    {
-      text: "Developed UI screens for user authentication and profile management using React, Next.js, Tailwind CSS, Figma, NextUI, and TypeScript.",
-    },
-    {
-      text: "Implemented both credential-based and OAuth authentication mechanisms using NextAuth and Zustand.",
-    },
-  ];
-  return (
-    <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-between gap-3 px-4 md:px-0 lg:flex-row xl:gap-5"
-      >
-        <div className="flex w-full flex-col space-y-3 lg:max-w-xl xl:max-w-2xl ">
-          <div className="spacey-y-2 flex flex-col">
-            {/* Title */}
-            <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
-              FullStack Developer Intern
-            </span>
-            <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
-              {/* Company name */}
-              <span>Infloso</span>
-
-              {/* Date */}
-              <span>March 2024 - May 2024</span>
-            </div>
-          </div>
-          <div className="flex flex-col space-y-1 text-sm sm:text-base">
-            {/* Tasks Description 1 */}
-            {tasks.map((item, index) => {
-              return (
-                <div key={index} className="flex flex-row space-x-2">
-                  <ArrowRightIcon className={"h-5 w-4 flex-none"} />
-                  <span>{item.text}</span>
-                </div>
-              );
-            })}
-            <div className="flex flex-row space-x-2">
-              <ArrowUpRightIcon className={"h-5 w-4 flex-none"} />
-              <span className="font-bold text-[#3182CE]">
-                Technologies used: Next.js, TypeScript, Tailwind CSS, React
-                Query,Nextauth, and Zustand.
-              </span>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-    </>
-  );
-}
 
 // Companies bar component
 const CompaniesBar = (props) => {
@@ -207,7 +91,7 @@ const CompaniesBar = (props) => {
                    props.ButtonOrderOfcompanyNameBackgroundColorGreen
                  ]
                    ? "scale-[1.03] text-[#3182CE]"
-                   : "text-textWhite"
+                   : "text-white"
                }`}
       >
         {props.CompanyName}
@@ -230,10 +114,10 @@ const CompaniesBar = (props) => {
         <div className="flex flex-row lg:flex-col">
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={0}
-            CompanyName="Freshbuyzar"
-            BarPosition={48}
-            BarAbovePosition={1}
-            DescriptionJob="Freshbuyzar"
+            CompanyName="PRNK Infotech LLP"
+            BarPosition={97}
+            BarAbovePosition={129}
+            DescriptionJob="PRNK Infotech LLP"
             CompanyNameBackgroundColorGreen={[
               true,
               false,
@@ -246,10 +130,10 @@ const CompaniesBar = (props) => {
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={1}
-            CompanyName="Infloso"
-            BarPosition={97}
-            BarAbovePosition={129}
-            DescriptionJob="Infloso"
+            CompanyName="Freshbuyzar"
+            BarPosition={48}
+            BarAbovePosition={1}
+            DescriptionJob="Freshbuyzar"
             CompanyNameBackgroundColorGreen={[
               false,
               true,
@@ -271,3 +155,118 @@ const CompaniesBar = (props) => {
     </div>
   );
 };
+
+//   Freshbuzar component
+function Freshbuyzar() {
+  const tasks = [
+    {
+      text: "Transformed the static freshbuzar site to fully dynamic site. Developed and integrated a complete cart feature and implemented seamless order processing workflows. ",
+    },
+    {
+      text: "Enhanced site performance by leveraging Next.js Server-Side Rendering (SSR) and Static Site Generation (SSG)., and Successfully integrated online payment gateways to streamline the purchasing process.",
+    },
+  ];
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col items-center justify-between gap-3 px-4 md:px-0 lg:flex-row xl:gap-5"
+      >
+        <div className="flex w-full flex-col space-y-3 ">
+          <div className="spacey-y-2 flex flex-col">
+            {/* Title */}
+            <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
+              Frontend Developer Intern
+            </span>
+            <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
+              {/* Company name */}
+              <span>Freshbuyzar</span>
+
+              {/* Date */}
+              <span>June 2024 - August 2024</span>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-1 text-sm sm:text-base">
+            {/* Tasks Description 1 */}
+            {tasks?.map((item, index) => {
+              return (
+                <div key={index} className="flex flex-row space-x-2">
+                  <ArrowRightIcon className={"h-5 w-4 flex-none"} />
+                  <span>{item.text}</span>
+                </div>
+              );
+            })}
+            <div className="flex flex-row space-x-2">
+              <ArrowRightIcon className={"h-5 w-4 flex-none"} />
+              <span className="font-bold text-[#3182CE]">
+                Technologies used: React.js, Next.js, Context API, React Query,
+                Tailwind CSS, and ShadCN UI.
+              </span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </>
+  );
+}
+
+// PRNK Infotech LLP component
+function Prnk() {
+  const tasks = [
+    {
+      text: "Sistahchatta : Developed a dynamic, fully responsive product review web app that allows users to rate and review products. Utilized TypeScript, React, Next.js, Tailwind CSS,ShadCN UI, and React Query to implement key features such as complete user profilemanagement, authentication, an admin dashboard, and infinite scrolling across all pages.",
+    },
+    {
+      text: "Spendcraft, PauseMy.cloud, & QRCode Projects: Translated detailed Figma designs into high-performance, SEO-friendly, and accessible multi-page applications (6-7 pages each) using next.js, shadcn ui, and tailwind css, ensuring seamless user experiences across devices",
+    },
+    {
+      text: "Dashboard Revamp: Overhauled an existing dashboard application by migrating the codebase from material ui to tailwind css and shadcn ui. This transition reduced the overall codebase by 50% (from 10,000 to 5,000 lines) while enhancing code maintainability andperformance.",
+    },
+  ];
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col items-center justify-between gap-3 px-4 md:px-0 lg:flex-row xl:gap-5"
+      >
+        <div className="flex w-full flex-col space-y-3 lg:max-w-xl xl:max-w-2xl ">
+          <div className="spacey-y-2 flex flex-col">
+            {/* Title */}
+            <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
+              Frontend Developer
+            </span>
+            <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
+              {/* Company name */}
+              <span>PRNK Infotech LLP</span>
+
+              {/* Date */}
+              <span>Sep 2024 - Jan 2025</span>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-1 text-sm sm:text-base">
+            {/* Tasks Description 1 */}
+            {tasks.map((item, index) => {
+              return (
+                <div key={index} className="flex flex-row space-x-2">
+                  <ArrowRightIcon className={"h-5 w-4 flex-none"} />
+                  <span>{item.text}</span>
+                </div>
+              );
+            })}
+            <div className="flex flex-row space-x-2">
+              <ArrowUpRightIcon className={"h-5 w-4 flex-none"} />
+              <span className="font-bold text-[#3182CE]">
+                Technologies used: React,Next.js, TypeScript, Tailwind,Figma
+                CSS,Context api React Query,Nextauth,Material UI.
+              </span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </>
+  );
+}
