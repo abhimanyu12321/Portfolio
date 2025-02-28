@@ -3,6 +3,7 @@ import React from "react";
 import { MySkills } from "../constants/MySkills";
 import SkillCard from "./SkillCard";
 import { motion } from "framer-motion";
+import { BorderBeam } from "@/components/magicui/border-beam";
 export default function SkillSection() {
   return (
     <section className=" sm:px-6 text-[#FAF7F2] md:mt-12">
@@ -13,7 +14,7 @@ export default function SkillSection() {
         <div className="mt-2 h-[4px] min-w-0 flex-grow bg-white"></div>
       </div>
 
-      <div className="flex flex-col items-center justify-between gap-6  mt-8 sm:mt-12">
+      <div className="flex flex-col items-center justify-between gap-6  mt-8 sm:mt-12 relative">
         {MySkills?.map((skill, i) => (
           <motion.div
             className="w-full"
@@ -37,6 +38,11 @@ export default function SkillSection() {
             <SkillCard title={skill.title} skills={skill.skills} />
           </motion.div>
         ))}
+        <BorderBeam
+          size={250}
+          duration={6}
+          className="from-blue-500 to-indigo-500 p-0 m-0"
+        />
       </div>
     </section>
   );

@@ -31,10 +31,11 @@ import {
   PrismaOriginal,
 } from "devicons-react";
 import { motion } from "framer-motion";
+// import { BorderBeam } from "@/components/magicui/border-beam";
 
 const SkillCard = ({ title, skills }) => {
   return (
-    <div className="flex h-full w-[100%] flex-col items-center sm:items-start justify-center gap-3 rounded-[5px] bg-[#18191E] p-[20px]">
+    <div className="flex h-full w-[100%] flex-col items-center sm:items-start justify-center gap-3 rounded-[5px] bg-[#18191E] p-[20px] relative">
       <div className="text-lg sm:text-2xl font-bold">{title}</div>
       <div className="grid grid-cols-2 place-items-center flex-wrap  gap-3 sm:flex md:gap-5">
         {skills?.map((skill, i) => (
@@ -61,6 +62,11 @@ const SkillCard = ({ title, skills }) => {
           </motion.div>
         ))}
       </div>
+      {/* <BorderBeam
+        size={250}
+        duration={6}
+        className="from-blue-500 to-indigo-500 p-0 m-0"
+      /> */}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 const ProjectCard = ({
   imgUrl,
@@ -11,7 +12,7 @@ const ProjectCard = ({
   isPublic,
 }) => {
   return (
-    <div>
+    <div className="relative h-[30rem] border-slate-800 border rounded-xl">
       <div
         className="h-52 md:h-72  rounded-t-xl relative group"
         style={{
@@ -43,6 +44,11 @@ const ProjectCard = ({
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
       </div>
+      <BorderBeam
+        size={200}
+        duration={6}
+        className="from-blue-500 to-indigo-500 p-0 m-0"
+      />
     </div>
   );
 };
