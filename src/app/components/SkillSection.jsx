@@ -14,7 +14,7 @@ export default function SkillSection() {
         <div className="mt-2 h-[4px] min-w-0 flex-grow bg-white"></div>
       </div>
 
-      <div className="flex flex-col items-center justify-between gap-6  mt-8 sm:mt-12 relative">
+      <div className="flex flex-col items-center justify-between gap-6 mt-8 sm:mt-12 relative overflow-hidden">
         {MySkills?.map((skill, i) => (
           <motion.div
             className="w-full"
@@ -41,7 +41,7 @@ export default function SkillSection() {
         <BorderBeam
           size={250}
           duration={6}
-          className="from-blue-500 to-indigo-500 p-0 m-0"
+          className="from-blue-500 to-indigo-500 p-0 m-0 "
         />
       </div>
     </section>

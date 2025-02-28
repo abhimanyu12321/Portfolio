@@ -12,7 +12,7 @@ const ProjectCard = ({
   isPublic,
 }) => {
   return (
-    <div className="relative h-[30rem] border-slate-800 border rounded-xl">
+    <div className="relative h-[30rem] border-slate-800 border rounded-xl overflow-hidden ">
       <div
         className="h-52 md:h-72  rounded-t-xl relative group"
         style={{
@@ -46,7 +46,7 @@ const ProjectCard = ({
       </div>
       <BorderBeam
         size={200}
-        duration={6}
+        duration={4}
         className="from-blue-500 to-indigo-500 p-0 m-0"
       />
     </div>

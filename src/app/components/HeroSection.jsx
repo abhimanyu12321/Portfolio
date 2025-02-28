@@ -42,7 +42,7 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-indigo-500 hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-[60%] sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-indigo-500 hover:bg-slate-200 text-white"
             >
               Hire Me
             </Link>
@@ -50,13 +50,13 @@ const HeroSection = () => {
               href="/cv.pdf"
               passHref
               target="_blank"
-              className=" relative inline-block w-full sm:w-fit rounded-full  hover:bg-slate-800 text-white mt-3"
+              className=" relative inline-block w-[60%] sm:w-fit rounded-full  hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
               <BorderBeam
-                size={60}
+                size={70}
                 duration={2}
                 className="from-blue-500 to-indigo-500 p-0 m-0"
               />
