@@ -7,10 +7,11 @@ import Footer from "./components/Footer";
 import SkillSection from "./components/SkillSection";
 import ExperienceSection from "./components/ExperienceSection";
 import { Particles } from "@/components/magicui/particles";
+import Drag from "./components/PointerWithSpring";
 // import AchievementsSection from "./components/AchievementsSection";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-black gap-2 md:gap-12">
+    <main className="flex min-h-screen flex-col bg-black gap-2 md:gap-12 overflow-hidden">
       <Navbar />
       <div className="container mt-14 mx-auto px-4 lg:px-12 py-4">
         <div id="home" className="relative">
@@ -63,6 +64,8 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Cursor follow up spring animations */}
+      <Drag />
       <Footer />
     </main>
   );
