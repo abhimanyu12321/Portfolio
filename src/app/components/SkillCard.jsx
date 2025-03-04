@@ -30,7 +30,7 @@ import {
   COriginal,
   PrismaOriginal,
 } from "devicons-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 // import { BorderBeam } from "@/components/magicui/border-beam";
 
 const SkillCard = ({ title, skills }) => {

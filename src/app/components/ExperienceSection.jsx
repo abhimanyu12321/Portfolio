@@ -1,6 +1,6 @@
 "use client";
-import { useState, useTransition, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { motion, useInView } from "motion/react";
 import React from "react";
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 

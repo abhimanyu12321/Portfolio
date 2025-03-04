@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link href={"#home"}>
           <Image src="/logo1.png" alt="logo" width={40} height={20} />
         </Link>
-        <div className="mobile-menu block md:hidden">
+        <div className="mobile-menu block lg:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -32,8 +32,8 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 font-bold ">
+        <div className="menu hidden lg:block lg:w-auto" id="navbar">
+          <ul className="flex p-4 md:p-0 lg:flex-row lg:space-x-8 mt-0 font-bold ">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />

@@ -2,7 +2,7 @@
 import React from "react";
 import { MySkills } from "../constants/MySkills";
 import SkillCard from "./SkillCard";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { BorderBeam } from "@/components/magicui/border-beam";
 export default function SkillSection() {
   return (
