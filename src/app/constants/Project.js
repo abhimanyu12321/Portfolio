@@ -1,18 +1,7 @@
 export const projectsData = [
+
     {
         id: 1,
-        title: "Sistah Chatta",
-        description:
-            "A Product reviewing webapp build with React , NextJS , TailwindCSS , and shadcn. Users can authenticate and view all products and give rating and review on each product. ",
-        image: "/images/projects/sistah.png",
-        tag: ["All", "Web"],
-        gitUrl: "https://github.com/iamkaushal/sistahchatta-frontend",
-        previewUrl:
-            "https://sistahchatta-frontend-eight.vercel.app/",
-        isPublic: false,
-    },
-    {
-        id: 2,
         title: "Spend Craft UI",
         description:
             "Created a 7 page UI for a webapp build with React , Next,js ,TailwindCSS and shadcn. ",
@@ -24,7 +13,7 @@ export const projectsData = [
     },
 
     {
-        id: 3,
+        id: 2,
         title: "Freshbuyzar Ecommerce Webapp",
         description:
             "Ecommerce webapp for buying fruits and vegetables build with React , NextJS , TailwindCSS. Have features which allows user to add products to cart and order, Authentication using Mobile Otp and have online payment feature.",
@@ -37,7 +26,7 @@ export const projectsData = [
     },
 
     {
-        id: 4,
+        id: 3,
         title: "PauseMy.Cloud",
         description:
             "A Cloud service website build with React , NextJS , TailwindCSS , and shadcn.",
@@ -49,7 +38,7 @@ export const projectsData = [
         isPublic: false,
     },
     {
-        id: 5,
+        id: 4,
         title: "AI CERTS Landing page",
         description:
             "A landing page for AI CERTS which is a certification platform  build with React , Next,js ,TailwindCSS. ",
@@ -61,7 +50,7 @@ export const projectsData = [
     },
 
     {
-        id: 6,
+        id: 5,
         title: "Amazon Clone Webapp",
         description:
             "Ecommerce webapp for shopping build with MERN Stack , MaterialUI. Have features which allows user to reset password via email, Authentication , can comment and rate products , and have Admin Panel , dashboard feature. ",
@@ -71,6 +60,18 @@ export const projectsData = [
         previewUrl:
             "https://amazona-clone-rho.vercel.app/",
         isPublic: true,
+    },
+    {
+        id: 6,
+        title: "Sistah Chatta",
+        description:
+            "A Product reviewing webapp build with React , NextJS , TailwindCSS , and shadcn. Users can authenticate and view all products and give rating and review on each product. ",
+        image: "/images/projects/sistah.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/iamkaushal/sistahchatta-frontend",
+        previewUrl:
+            "https://sistahchatta-frontend-eight.vercel.app/",
+        isPublic: false,
     },
 
 ];
