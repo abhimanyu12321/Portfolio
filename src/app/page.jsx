@@ -65,7 +65,7 @@ export default function Home() {
       </div>
 
       {/* Cursor follow up spring animations */}
-      <Drag />
+      {/* <Drag /> */}
       <Footer />
     </main>
   );

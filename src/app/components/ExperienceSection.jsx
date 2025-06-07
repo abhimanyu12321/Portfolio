@@ -48,6 +48,8 @@ const ExperienceWrapper = () => {
         return <Freshbuyzar />;
       case "PRNK Infotech LLP":
         return <Prnk />;
+      case "Pulse Solution":
+        return <Pulsesolution />;
     }
   };
   const [DescriptionJob, setDescriptionJob] =
@@ -112,12 +114,12 @@ const CompaniesBar = (props) => {
       {/* // ? Companies name as buttons */}
       <div className="order-1 flex flex-col space-y-1 px-4 md:px-8 lg:order-2 lg:px-0">
         <div className="flex flex-row lg:flex-col">
-          <CompanyButton
+             <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={0}
-            CompanyName="PRNK Infotech LLP"
+            CompanyName="Pulse Solution"
             BarPosition={97}
             BarAbovePosition={129}
-            DescriptionJob="PRNK Infotech LLP"
+            DescriptionJob="Pulse Solution"
             CompanyNameBackgroundColorGreen={[
               true,
               false,
@@ -130,14 +132,30 @@ const CompaniesBar = (props) => {
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={1}
+            CompanyName="PRNK Infotech LLP"
+            BarPosition={97}
+            BarAbovePosition={129}
+            DescriptionJob="PRNK Infotech LLP"
+            CompanyNameBackgroundColorGreen={[
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+            ]}
+            setDescriptionJob={props.setDescriptionJob}
+          />
+          <CompanyButton
+            ButtonOrderOfcompanyNameBackgroundColorGreen={2}
             CompanyName="Freshbuyzar"
             BarPosition={48}
             BarAbovePosition={1}
             DescriptionJob="Freshbuyzar"
             CompanyNameBackgroundColorGreen={[
               false,
-              true,
               false,
+              true,
               false,
               false,
               false,
@@ -244,7 +262,7 @@ function Prnk() {
               <span>PRNK Infotech LLP</span>
 
               {/* Date */}
-              <span>Sep 2024 - Jan 2025</span>
+              <span>Sep 2024 - March 2025</span>
             </div>
           </div>
           <div className="flex flex-col space-y-1 text-sm sm:text-base">
@@ -262,6 +280,61 @@ function Prnk() {
               <span className="font-bold text-[#3182CE]">
                 Technologies used: React,Next.js, TypeScript, Tailwind,Figma
                 CSS,Context api React Query,Nextauth,Material UI.
+              </span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </>
+  );
+}
+
+
+
+// Pulse Solution component
+function Pulsesolution() {
+  const tasks = [
+    {
+      text: "Developed and launched the Musa app's backend using Node.js, Express, and MongoDB. Utilized AWS (S3, CloudFront) for storage, and content delivery. Built key features including media management, subscriptions, notifications, and admin controls, focusing on performance and scalability.",
+    },
+    
+  ];
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col items-center justify-between gap-3 px-4 md:px-0 lg:flex-row xl:gap-5"
+      >
+        <div className="flex w-full flex-col space-y-3 lg:max-w-xl xl:max-w-2xl ">
+          <div className="spacey-y-2 flex flex-col">
+            {/* Title */}
+            <span className="text-base font-medium tracking-wide text-gray-100 sm:text-2xl">
+              Node.js Developer
+            </span>
+            <div className="flex flex-col items-start justify-between font-mono text-sm font-bold text-[#3182CE] sm:flex-row sm:items-center sm:text-base">
+              {/* Company name */}
+              <span>Pulse Solution</span>
+
+              {/* Date */}
+              <span>April 2025 - Present</span>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-1 text-sm sm:text-base">
+            {/* Tasks Description 1 */}
+            {tasks.map((item, index) => {
+              return (
+                <div key={index} className="flex flex-row space-x-2">
+                  <ArrowRightIcon className={"h-5 w-4 flex-none"} />
+                  <span>{item.text}</span>
+                </div>
+              );
+            })}
+            <div className="flex flex-row space-x-2">
+              <ArrowUpRightIcon className={"h-5 w-4 flex-none"} />
+              <span className="font-bold text-[#3182CE]">
+                Technologies used: TypeScript , Node.js, Express , MongoDB, AWS (S3, CloudFront), EJS template engine.
               </span>
             </div>
           </div>
