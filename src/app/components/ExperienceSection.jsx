@@ -39,7 +39,7 @@ const experiences = [
 export default function ExperienceSection() {
   const refHeading = useRef(null);
   const inViewHeading = useInView(refHeading);
-  const [activeIdx, setActiveIdx] = useState(0); // Default to PRNK Infotech LLP
+  const [activeIdx, setActiveIdx] = useState(0);
 
   // Bar positions for animation (match your previous logic)
   const barPositions = [97, 97, 48];
