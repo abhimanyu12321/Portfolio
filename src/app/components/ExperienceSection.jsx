@@ -84,10 +84,9 @@ export default function ExperienceSection() {
                     key={exp.company}
                     onClick={() => setActiveIdx(idx)}
                     className={`w-32 flex-none rounded py-3 text-center font-mono text-sm duration-500 hover:text-gray-500 lg:w-44 lg:px-4 lg:pl-6 lg:text-left lg:text-base ${
-                      activeIdx === idx
-                        ? "scale-[1.03] text-[#3182CE]"
-                        : "text-white"
-                    }`}
+                      activeIdx === idx ? "scale-[1.03]" : ""
+                    } ${activeIdx !== idx ? "text-white" : ""}`}
+                    style={activeIdx === idx ? { color: "#3182CE" } : {}}
                   >
                     {exp.company}
                   </button>
